@@ -1,0 +1,282 @@
+*{
+     box-sizing: border-box;    
+}
+body{
+    padding: 0;
+    margin: 0; 
+    background-color: rgb(238, 240, 240);
+}
+
+/*sponser box */
+
+.sponser{
+    display: flex;
+    flex-direction:row-reverse;
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height:2.8rem;
+    
+}
+.sponser img{
+    height:1.70rem;
+    margin:0.5625rem 0.4375rem 0 0.4375rem;
+    
+}
+.sponser a:first-child{
+    margin-right: 1.5625rem;
+}
+
+
+/* navebar  */
+
+
+ul{
+    margin:0 ;
+    padding: 0;
+    position: relative;
+   
+}
+
+a ,li{
+   
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    color:#fff;
+    
+    cursor: pointer;
+    
+}
+
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    background-color:#c71212fb;
+    height:4.7rem;
+}
+
+.navebar-left{
+    display: flex;
+    
+}
+ 
+.navebar-left img{
+    margin:0.4375rem 0.625rem 0.3125rem 1.3125rem;
+    height:3.75rem; 
+    cursor: pointer;
+}
+
+.navebar-left li{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight:bold;
+    height: 4.6875rem;
+    line-height: 4.6875rem;
+    padding-left: 0.4375rem;
+}
+.navebar-left li:first-child{
+    padding: 0;
+    margin-top: 0.0625rem;
+    margin-left:1.0625rem ;
+}
+.navebar-left li:last-child{
+    padding-left: 0.1875rem;
+}
+
+
+
+
+.navebar-right{
+    display:flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9375rem;
+    float: right;
+    height: 4.6875rem;
+    line-height: 4.6875rem;
+
+}
+
+
+ .navebar-right ul{
+     margin-right: 1rem;
+    
+ }
+ .navebar-right li{
+     margin-left: 0.5rem;
+ }
+
+ .navebar-right li> i{
+    height: 4.6875rem;
+    line-height: 4.6875rem;
+     float: left;
+    
+ }
+ 
+
+ .navebar-right li>span{
+     float: left;
+     line-height: 1.25rem;
+     margin-left: 0.375rem;
+     height: 4.6875rem;
+     line-height: 4.6875rem;
+ }
+
+
+  .navebar-left .navebar-right li{
+    border-bottom: 0.3125rem solid ;
+
+  }
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ .dropdown{
+     position: relative;
+     display:inline-block;
+     
+ }
+
+ .dropdown-content{
+     display: none;
+     position: absolute;
+    
+     
+
+}
+ 
+.dropdown-content a{
+    display: block;
+    color: black;
+    padding-left: 20px;
+}
+
+ .dropdown:hover .dropdown-content{
+    display:block ;
+    background-color: rgb(255, 255, 255);
+     min-width: 5.9375rem;
+     line-height:2.5rem;
+     top: 4.6875rem;
+     
+ }
+
+ .dropdown-content a:hover {
+     background-color: #f3eded
+    }
+ 
+ 
+
+ .hcl{
+     background-color: black;
+     height: 1.375rem;
+     line-height: 1.375rem;
+     margin:1.6875rem 0.9375rem 0 0;
+     cursor: pointer;
+     width: 7.5rem;
+     border-radius: 0.1875rem;
+     
+     
+     
+ }
+ .hcl span{
+     float: inline-start;
+     margin-top: 0.125rem;
+     margin-left: 0.75rem;
+     font-size: 0.625rem;
+     word-spacing: 0.0625rem;
+     letter-spacing:0.03125rem;
+     color: rgb(255, 255, 255);
+     
+ }
+
+ .hcl img{
+     height:0.375rem;
+     margin-left: 0.03125rem;
+
+ }
+ 
+ 
+
+ /*mobile view */
+ 
+@media (max-width:400px) {
+
+
+    .sponser img{
+        height: 1.3rem;
+        margin: 1rem 0.3rem;
+        
+    }
+
+    .sponser a:first-child{
+        margin-right: 0.3rem;
+    }
+   
+    .navebar-left ul{
+        display: none;
+    }
+
+    .sign-in,
+    .language-dropdown,
+    .search>span{
+        display:none;
+    }
+
+    .search i{
+        position:absolute;
+        bottom: 0.5rem;
+        right: 13rem;
+    }
+
+    .navebar{
+        height: 3.7rem;
+    }
+
+    .navebar-left img{    
+        margin:0.2rem 0.625rem 1rem 1rem;
+    height:3rem; 
+    }
+
+    .hcl{
+        position: absolute;
+        height:1.5625rem;
+        right: 0;
+        top: 2.2rem;
+    }
+
+    .h-menu{
+        position: absolute;
+        top:4rem;
+        left:5.5rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 1.25rem;
+        height: 1.125rem;
+    }
+
+
+    .h-menu .h-menu-bar{
+        height:0.125rem;
+        width: 100%;
+        background-color: white;
+        border-radius: 0.0625rem;
+    }
+
+
+
+
+
+}
