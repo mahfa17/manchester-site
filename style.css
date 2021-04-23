@@ -224,8 +224,8 @@ a ,li{
         display: flex;
         flex-direction: column;
         top:6.5rem;
-        left: -300px;
-        width:300px;
+        left: -301px;
+        width:301px;
         background-color: cyan;
         
     }
